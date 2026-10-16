@@ -19,6 +19,15 @@ npx @usebruno/oauth2-callback-server --port 8090
 npx @usebruno/oauth2-callback-server -p 8090
 ```
 
+The server will act on a path, **/callback** by default
+
+Specify a custom path:
+
+```bash
+npx @usebruno/oauth2-callback-server --path /
+npx @usebruno/oauth2-callback-server -p /
+```
+
 **Note:** If you specify a port and it's already in use, the server will exit with an error.
 
 Show help:
@@ -39,7 +48,7 @@ Or run directly with node:
 
 ```bash
 node server.js
-node server.js --port 8090
+node server.js --port 8090 --path /callback
 ```
 
 Visit `http://localhost:<port>/callback` to see the OAuth2 redirect page.
