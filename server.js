@@ -32,7 +32,7 @@ try {
     options: {
       path: {
         type: 'string',
-        short: ''
+        short: 'l'
       },
       port: {
         type: 'string',
